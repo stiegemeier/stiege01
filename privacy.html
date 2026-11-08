@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Política de privacidade — rclone-vault</title>
+  <meta name="description" content="Política de privacidade do rclone-vault, configuração pessoal de sincronização de uma pasta de notas do Obsidian. Vigência: 8 de novembro de 2026.">
+  <style>
+    :root {
+      color-scheme: light;
+      --text: #1b1b1b;
+      --muted: #3d3d3d;
+      --bg: #f7f5f2;
+      --surface: #ffffff;
+      --link: #0b3d91;
+      --link-hover: #072c6b;
+      --border: #d9d3c9;
+      --focus: #0b3d91;
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      font-size: 1.0625rem;
+      line-height: 1.6;
+      color: var(--text);
+      background: var(--bg);
+    }
+
+    a {
+      color: var(--link);
+      text-underline-offset: 0.15em;
+    }
+
+    a:hover { color: var(--link-hover); }
+
+    a:focus-visible {
+      outline: 3px solid var(--focus);
+      outline-offset: 3px;
+    }
+
+    .skip {
+      position: absolute;
+      left: 0.75rem;
+      top: 0.75rem;
+      transform: translateY(-150%);
+      background: var(--surface);
+      color: var(--text);
+      padding: 0.5rem 0.75rem;
+      border: 2px solid var(--focus);
+      z-index: 1;
+    }
+
+    .skip:focus { transform: none; }
+
+    header, main, footer {
+      width: min(40rem, calc(100% - 2rem));
+      margin-inline: auto;
+    }
+
+    header { padding-top: 2.5rem; }
+
+    nav ul {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem 1.25rem;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    nav a { font-weight: 650; }
+
+    main {
+      margin-top: 1.5rem;
+      margin-bottom: 2rem;
+      padding: 1.5rem 1.35rem 0.4rem;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 0.6rem;
+    }
+
+    h1 {
+      margin: 0 0 0.75rem;
+      font-size: 2rem;
+      line-height: 1.2;
+    }
+
+    h2 {
+      margin: 1.6rem 0 0.4rem;
+      font-size: 1.25rem;
+      line-height: 1.3;
+    }
+
+    p { margin: 0 0 1rem; }
+
+    .meta {
+      margin: 0;
+      color: var(--muted);
+    }
+
+    footer {
+      padding-bottom: 2.5rem;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+  </style>
+</head>
+<body>
+  <a class="skip" href="#conteudo">Ir para o conteúdo</a>
+  <header>
+    <nav aria-label="Principal">
+      <ul>
+        <li><a href="./">Início</a></li>
+        <li><a href="privacy.html" aria-current="page">Política de privacidade</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main id="conteudo">
+    <h1>Política de privacidade</h1>
+    <p class="meta">rclone-vault · vigente em <time datetime="2026-11-08">8 de novembro de 2026</time></p>
+    <p>Esta política descreve o rclone-vault, uma configuração de uso pessoal e não oficial. Ela sincroniza os arquivos de uma pasta de notas do Obsidian entre o Google Drive do próprio proprietário e o computador Linux privado dele, usando o rclone. Não há afiliação com o Google, o Obsidian ou o rclone.</p>
+
+    <h2>Acesso</h2>
+    <p>O acesso OAuth ao Google Drive permite listar, ler, criar, atualizar e excluir arquivos. A sincronização configurada limita-se à pasta de notas do próprio proprietário.</p>
+
+    <h2>Uso</h2>
+    <p>O acesso é usado somente para manter cópias privadas em sincronia.</p>
+
+    <h2>Armazenamento</h2>
+    <p>As cópias locais e os backups ficam em caráter privado no computador do proprietário.</p>
+
+    <h2>Compartilhamento</h2>
+    <p>Não há compartilhamento público. Não há publicidade, venda de dados nem treinamento de inteligência artificial como finalidade do aplicativo.</p>
+
+    <h2>Revogação</h2>
+    <p>A revogação é feita nas permissões de aplicativos da conta Google. Ela interrompe o acesso futuro. Cópias locais e backups já existentes precisam ser excluídos separadamente.</p>
+
+    <h2>Estas páginas</h2>
+    <p>Estas páginas não coletam dados por meio de formulários. O provedor de hospedagem pode manter registros de acesso normais.</p>
+  </main>
+  <footer>
+    <p><a href="./">Voltar ao início</a></p>
+  </footer>
+</body>
+</html>
