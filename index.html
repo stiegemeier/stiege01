@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>rclone-vault</title>
+  <meta name="description" content="Configuração pessoal que sincroniza uma pasta de notas do Obsidian entre o Google Drive do proprietário e o computador Linux privado dele, usando o rclone.">
+  <style>
+    :root {
+      color-scheme: light;
+      --text: #1b1b1b;
+      --muted: #3d3d3d;
+      --bg: #f7f5f2;
+      --surface: #ffffff;
+      --link: #0b3d91;
+      --link-hover: #072c6b;
+      --border: #d9d3c9;
+      --focus: #0b3d91;
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      font-size: 1.0625rem;
+      line-height: 1.6;
+      color: var(--text);
+      background: var(--bg);
+    }
+
+    a {
+      color: var(--link);
+      text-underline-offset: 0.15em;
+    }
+
+    a:hover { color: var(--link-hover); }
+
+    a:focus-visible {
+      outline: 3px solid var(--focus);
+      outline-offset: 3px;
+    }
+
+    .skip {
+      position: absolute;
+      left: 0.75rem;
+      top: 0.75rem;
+      transform: translateY(-150%);
+      background: var(--surface);
+      color: var(--text);
+      padding: 0.5rem 0.75rem;
+      border: 2px solid var(--focus);
+      z-index: 1;
+    }
+
+    .skip:focus { transform: none; }
+
+    header, main, footer {
+      width: min(40rem, calc(100% - 2rem));
+      margin-inline: auto;
+    }
+
+    header { padding-top: 2.5rem; }
+
+    nav ul {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem 1.25rem;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    nav a {
+      font-weight: 650;
+    }
+
+    .privacy-link {
+      display: inline-block;
+      margin-top: 0.25rem;
+      padding: 0.55rem 0.9rem;
+      background: var(--link);
+      color: #ffffff;
+      text-decoration: none;
+      border-radius: 0.35rem;
+    }
+
+    .privacy-link:hover,
+    .privacy-link:focus-visible {
+      background: var(--link-hover);
+      color: #ffffff;
+    }
+
+    main {
+      margin-top: 1.5rem;
+      margin-bottom: 2rem;
+      padding: 1.5rem 1.35rem 1.6rem;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 0.6rem;
+    }
+
+    h1 {
+      margin: 0 0 0.75rem;
+      font-size: 2rem;
+      line-height: 1.2;
+    }
+
+    p { margin: 0 0 1rem; }
+
+    p:last-child { margin-bottom: 0; }
+
+    footer {
+      padding-bottom: 2.5rem;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+  </style>
+</head>
+<body>
+  <a class="skip" href="#conteudo">Ir para o conteúdo</a>
+  <header>
+    <nav aria-label="Principal">
+      <ul>
+        <li><a href="./" aria-current="page">Início</a></li>
+        <li><a class="privacy-link" href="privacy.html">Política de privacidade</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main id="conteudo">
+    <h1>rclone-vault</h1>
+    <p>O rclone-vault é uma configuração de uso pessoal. Ela sincroniza os arquivos de uma pasta de notas do Obsidian entre o Google Drive do próprio proprietário e o computador Linux privado dele, usando o rclone.</p>
+    <p>Esta é uma configuração pessoal não oficial. Não há afiliação com o Google, o Obsidian ou o rclone.</p>
+    <p><a href="privacy.html">Leia a política de privacidade</a>, que descreve o acesso ao Google Drive, o uso, o armazenamento, o compartilhamento e a revogação.</p>
+  </main>
+  <footer>
+    <p>Página inicial do rclone-vault.</p>
+  </footer>
+</body>
+</html>
